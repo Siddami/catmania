@@ -6,7 +6,7 @@
  
  body{
     background-color: black;
-    padding: 2rem;
+    overflow: hidden;
  }
 
  /* Navbar */
@@ -15,44 +15,66 @@
     justify-content: space-between;
     align-items: center;
     flex: 1 0 auto;
+    padding: 2rem;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.601);
 }
  
  #navbar p{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-style: italic;
     font-weight: bold;
-    color: bisque;
+    color: rgb(141, 52, 224);
+    padding: 0.5rem;
  }
 
  #navbar div{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex: 1 0 auto;
- }
-
- #links{
-    color: white;
-    font-weight: bold;
+    width: 40%;
  }
 
  #links a{
     text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem;
+ }
+
+ #links a:hover{
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(141, 52, 224);
+ }
+
+ #arrow{
+    padding: 0.5rem;
  }
  
  /* CSS for scroll-to-top and scroll-to-bottom links */
-        #top, #bottom {
-            position: fixed;
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-decoration: none;
-            border-radius: 5px;
-            right: 20px;
-        }
-        #top {
-            top: 20px;
-        }
-        #bottom {
-            bottom: 20px;
-        }
+#top, #bottom {
+    position: fixed;
+    background-color: #333;
+    color: white;
+    padding: 0.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    right: 20px;
+}
+
+
+
+/* mobile view */
+@media (min-width:300px) and (max-width: 900px){
+    #navbar{
+        display: block;
+        margin: 0 auto;   
+    }
+
+    #top {
+        top: 20px;
+    }
+    #bottom {
+        bottom: 20px;
+    }
+}
