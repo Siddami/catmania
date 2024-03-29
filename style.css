@@ -20,6 +20,7 @@
     margin-bottom: 2rem;
     width: 100%;
     z-index: 100;
+    background-color: black;
 }
 
  .navbar > div{
@@ -108,10 +109,9 @@ main{
 
 /* cat-types section */
 
-/* .cat-types{
-   height: 500px;
-   width: 100%;
-} */
+.cat-types{
+   margin-bottom: 2rem;
+}
 
 .cat-types h2{
    margin-bottom: 2rem;
@@ -123,6 +123,7 @@ main{
    justify-content: space-around;
    /* align-items: center; */
    flex-wrap: wrap;
+   gap: 1.5rem;
 }
 
 .cat{
@@ -135,6 +136,7 @@ main{
    border: 1px solid #333;
    border-radius: 1rem;
    padding: 1rem;
+   flex: 1 0 auto;
 }
 
 .cat-images{
@@ -143,6 +145,12 @@ main{
 
 .cat p{
    line-height: 1.5;
+}
+
+#bottom{
+   display: flex;
+   padding: 1rem;
+   justify-content: space-between;
 }
 
 /* mobile view */
@@ -165,5 +173,9 @@ main{
 
    .image{
       display: none;
+   }
+
+   .cat{
+      width: 100%;
    }
 }
