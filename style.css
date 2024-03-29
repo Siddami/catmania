@@ -1,0 +1,23 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ 
+ /* CSS for scroll-to-top and scroll-to-bottom links */
+        #top, #bottom {
+            position: fixed;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            right: 20px;
+        }
+        #top {
+            top: 20px;
+        }
+        #bottom {
+            bottom: 20px;
+        }
