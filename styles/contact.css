@@ -1,0 +1,98 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ body{
+    background-color: black;
+    color: white;
+    overflow: hidden;
+ }
+
+ main{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.left{
+    width: 60%;
+    padding: 1rem;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.heading a{
+    color: white;
+    text-decoration: none;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.heading a:hover{
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(141, 52, 224);
+ }
+
+#link{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15rem;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.form-div{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+form input, select, textarea, label{
+    width: 100%;
+    padding: 0.8rem;
+    margin-block:1rem;
+}
+
+#submit {
+    background-color:rgb(141, 52, 224);
+    cursor:pointer;
+    color: white;
+    font-weight: bold;
+
+}
+
+img{
+    width: 40%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* mobile view */
+
+@media (max-width: 900px){
+    img{
+        display: none;
+    }
+
+    .left{
+        width: 100%
+    }
+}
