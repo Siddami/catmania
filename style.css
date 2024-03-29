@@ -113,4 +113,16 @@ main{
     #navbar > div{
         display: block
     }
+
+    .intro{ 
+      display: block;
+   }
+
+   .text-intro{
+      width: 100%;
+   }
+
+   .image{
+      display: none;
+   }
 }
