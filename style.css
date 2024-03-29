@@ -4,6 +4,41 @@
     box-sizing: border-box;
  }
  
+ body{
+    background-color: black;
+    padding: 2rem;
+ }
+
+ /* Navbar */
+ #navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 auto;
+}
+ 
+ #navbar p{
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bold;
+    color: bisque;
+ }
+
+ #navbar div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1 0 auto;
+ }
+
+ #links{
+    color: white;
+    font-weight: bold;
+ }
+
+ #links a{
+    text-decoration: none;
+ }
  
  /* CSS for scroll-to-top and scroll-to-bottom links */
         #top, #bottom {
