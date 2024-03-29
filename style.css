@@ -6,7 +6,7 @@
  
  body{
     background-color: black;
-    overflow: hidden;
+    color: white;
  }
 
  /* Navbar */
@@ -16,22 +16,21 @@
     align-items: center;
     flex: 1 0 auto;
     padding: 2rem;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.601);
 }
- 
+
+ #navbar div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+ }
+
  #navbar p{
     font-size: 1.5rem;
     font-style: italic;
     font-weight: bold;
     color: rgb(141, 52, 224);
     padding: 0.5rem;
- }
-
- #navbar div{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 40%;
  }
 
  #links a{
@@ -65,16 +64,13 @@
 
 
 /* mobile view */
-@media (min-width:300px) and (max-width: 900px){
+@media (max-width: 900px){
     #navbar{
-        display: block;
-        margin: 0 auto;   
+        padding: 0;
     }
 
-    #top {
-        top: 20px;
+    #navbar > div{
+        display: block
     }
-    #bottom {
-        bottom: 20px;
-    }
+
 }
