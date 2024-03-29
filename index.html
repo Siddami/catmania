@@ -5,27 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <nav id="navbar top">
+    <nav id="top" class="navbar">
         <div>
-            <p>Catmania</p>
+            <p id="logo">Catmania</p>
 
             <div id="links">
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
             </div> 
         </div>
-         <a href="#bottom" id="bottom"><i class='bx bx-down-arrow-alt' ></i></a>
+         <a href="#bottom" id="bottom" class="arrow"><i class='bx bx-down-arrow-alt' ></i></a>
     </nav> 
 
     <main>
-        <section>
-            <div>
-                <h1>Welcome to Catmania!!</h1>
-                <p>"Welcome to CatMania! Your ultimate destination for everything feline. Explore a diverse range of cat breeds, from majestic Maine Coons to playful Scottish Folds. Immerse yourself in stunning cat photography while learning about each breed's unique characteristics. Get ready to embark on a purrfect journey into the world of cats!"</p>
-            </div>
+        <section class="intro">
+                <div class="text-intro">
+                    <h1>Welcome to Catmania!!</h1>
+                    <p>Welcome to CatMania! Your ultimate destination for everything feline. Explore a diverse range of cat breeds, from majestic Maine Coons to playful Scottish Folds. Immerse yourself in stunning cat photography while learning about each breed's unique characteristics. Get ready to embark on a purrfect journey into the world of cats!</p>
+                </div>
+                <div class="image">
+                    <img src="./img/paws.png" alt="cat-paws" width="360px">
+                </div>
+        </section>
+
+        <section class="cat-types">
+            
+
         </section>
     </main>
         <!-- 
@@ -39,7 +47,7 @@
     
     <a id="bottom"></a> -->
     <!-- <footer>
-         <a href="#top" id="top"><i class='bx bx-up-arrow-alt'></i></a>
+         <a href="#top" id="top" class="arrow"><i class='bx bx-up-arrow-alt'></i></a>
     </footer> -->
 </body>
 </html>

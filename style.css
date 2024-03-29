@@ -10,27 +10,39 @@
  }
 
  /* Navbar */
- #navbar{
+ .navbar{
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex: 1 0 auto;
     padding: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    z-index: 100;
 }
 
- #navbar div{
+ .navbar > div{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 40%;
+    width: 60%;
+    flex: 1 2 auto;
  }
 
- #navbar p{
+ #logo{
     font-size: 1.5rem;
     font-style: italic;
     font-weight: bold;
     color: rgb(141, 52, 224);
     padding: 0.5rem;
+ }
+
+ #links{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-inline: 1rem;
  }
 
  #links a{
@@ -46,21 +58,50 @@
     background-color: rgb(141, 52, 224);
  }
 
- #arrow{
-    padding: 0.5rem;
- }
- 
- /* CSS for scroll-to-top and scroll-to-bottom links */
-#top, #bottom {
-    position: fixed;
+ .arrow{
     background-color: #333;
     color: white;
     padding: 0.5rem;
     text-decoration: none;
     border-radius: 5px;
     right: 20px;
+ }
+
+
+/* main  */
+main{
+   overflow: hidden;
+   position: relative;
+   padding-top: 8rem;
+   padding-inline: 2rem ;
+   margin: 0 auto;
+   width: 80%;
 }
 
+.intro {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+}
+
+.intro h1{
+   margin-bottom: 2rem;
+   font-size: 2rem;
+   font-style: italic;
+}
+
+.text-intro{
+   width: 40%;
+   line-height: 2;
+}
+
+.image{
+   width: 40%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
 
 
 /* mobile view */
@@ -72,5 +113,4 @@
     #navbar > div{
         display: block
     }
-
 }
