@@ -147,6 +147,12 @@ main{
    line-height: 1.5;
 }
 
+.read-more{
+   color: rgb(141, 52, 224);
+   font-weight: bold;
+   text-decoration: none;
+}
+
 #bottom{
    display: flex;
    padding: 1rem;
@@ -157,6 +163,20 @@ main{
 @media (max-width: 900px){
     #navbar{
         padding: 0;
+        margin-bottom:1rem;
+    }
+
+    #logo{
+      font-size: .8rem;
+    }
+
+    #links a{
+      font-size: 0.8rem;
+    }
+
+    main{
+      width: 100%;
+      padding-inline: 1rem;
     }
 
     #navbar > div{
